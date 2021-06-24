@@ -1,16 +1,16 @@
 :warning: Everything between << >> needs to be replaced (remove << >> after replacing)
 # CS110 Project Proposal
-# << Project Title >>
+# Snake Game
 ## CS 110 Final Project
-### << Semester, Year >>
+### Summer, 2021
 ### [Assignment Description](https://docs.google.com/document/d/1H4R6yLL7som1lglyXWZ04RvTp_RvRFCCBn6sqv-82ps/edit#)
 
 << [https://github.com/<repo>](#) >>
 
 << [link to demo presentation slides](#) >>
 
-### Team: << team name >>
-#### << Team Members >>
+### Team: Survivor
+#### Matt Murphy, Jiawei Liu
 
 ***
 
@@ -23,6 +23,12 @@
 * << A wireframe or drawing of the user interface concept along with a short description of the interface. You should have one for each screen in your program. >>
     * For example, if your program has a start screen, game screen, and game over screen, you should include a wireframe / screenshot / drawing of each one and a short description of the components
 * << You should also have a screenshot of each screen for your final GUI >>
+* ![start screen](assets/start_screen_drawing.png)
+  * This is the start screen for our snake game, it contains the background of the game and a start button in the middle of the screen which when pressed will start the game.
+* ![game screen](assets/game_screen_drawing.png)
+  * This is the screen the player will see when the game first starts, as the game progresses the user will eat more fruit and then their snake will grow.
+* ![game over screen](assets/game_over_screen_drawing.png)
+  * This is the screen the user will see when they lose or complete the game, the score will update to show their final score.  
 
 ***        
 
@@ -55,15 +61,15 @@ The Project is broken down into the following file structure:
 ## Tasks and Responsibilities *(Software Lead)*
 * You must outline the team member roles and who was responsible for each class/method, both individual and collaborative.
 
-### Software Lead - << name >>
+### Software Lead - Matt/Jiawei
 
 << Worked as integration specialist by... >>
 
-### Front End Specialist - << name >>
+### Front End Specialist - Matt
 
 << Front-end lead conducted significant research on... >>
 
-### Back End Specialist - << name >>
+### Back End Specialist - Jiawei
 
 << The back end specialist... >>
 
