@@ -41,7 +41,7 @@
 * Class Interface Design
     * << A simple drawing that shows the class relationships in your code (see below for an example). >>
         * ![class diagram](assets/class_diagram.jpg)
-    	*![program design] (assets/program_design_drawing.png.png)
+    	*![program design] (assets/program_design_drawing.png)
     * This does not need to be overly detailed, but should show how your code fits into the Model/View/Controller paradigm.
 * Classes
     * << You should have a list of each of your classes with a description. >>
