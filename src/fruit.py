@@ -17,4 +17,4 @@ class Fruit(pygame.sprite.Sprite):
         if self.bounce:
             self.rect.x += 1
         else:
-            self.rect.x = self.origin
+            self.rect.x = self.bounce
