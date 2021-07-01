@@ -49,7 +49,7 @@ class Controller:
                     elif(event.key == pygame.K_RIGHT):
                         self.snake.move_right()
 
-        collisions = pygame.sprite.spritecollide(self.snake, self.snake, True)
+        collisions = pygame.sprite.spritecollide(self.snake, self.snake, True)#replace self.snake with self.fruit True)
         if(collisions):
             hearts = self.hearts.sprites()
             hearts[-1].kill()

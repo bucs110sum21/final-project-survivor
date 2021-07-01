@@ -10,6 +10,12 @@ class Fruit(pygame.sprite.Sprite):
         self.rect.x = x
         self.rect.y = y
         self.name = name
+	#self.speed = 2
 
     def update():
         pass
+        #random_x = random.randrange(-2,4)
+	#random_y = random.randrange(-2,4)
+	#self.rect.x = random_x
+	#self.rect.y = random_y
+	

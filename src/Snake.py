@@ -23,10 +23,16 @@ class Snake(pygame.sprite.Sprite):
     def move_right(self):
         self.rect.x += self.speed
 
-    def collision(self):
+    def collision(self):#,food):
         # Need to add what to do when the snake collides with the wall or itself
         pass
+        #
 
     def snake_grow(self):
         # Need to add how to add onto snake when it eats food
         pass
+        #growth_x = 3
+        #growth_y = 3
+        #self.rect.x += growth_x
+        #self.rect.y += growth_y
+	
