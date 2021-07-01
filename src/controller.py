@@ -49,13 +49,13 @@ class Controller:
                     elif(event.key == pygame.K_RIGHT):
                         self.snake.move_right()
 
-        collisions = pygame.sprite.spritecollide(self.snake, self.snake, True)#replace self.snake with self.fruit True)
-        if(collisions):
-            hearts = self.hearts.sprites()
-            hearts[-1].kill()
-            self.background.fill((250, 0, 0))
-        if(self.snake.health == 0):
-            self.state = "GAMEOVER"
+	collisions = pygame.sprite.spritecollide(self.snake, self.snake, True)#replace self.snake with self.fruit
+        	if(collisions):
+		hearts = self.hearts.sprites()
+           	 hearts[-1].kill()
+           	 self.background.fill((250, 0, 0))
+		if(self.snake.health == 0):
+            	self.state = "GAMEOVER"
 
     def gameOver(self):
         self.snake.kill()

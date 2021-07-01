@@ -26,7 +26,8 @@ class Snake(pygame.sprite.Sprite):
     def collision(self):#,food):
         # Need to add what to do when the snake collides with the wall or itself
         pass
-        #
+        # self.health -= 1
+        
 
     def snake_grow(self):
         # Need to add how to add onto snake when it eats food
