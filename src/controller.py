@@ -27,6 +27,13 @@ class Controller:
 
 
     def mainLoop(self):
+        '''
+        Sets the game to keep running unless the state is gameover
+        Args:
+          self
+        Return:
+          None
+        '''
         while True:
             if(self.state == "GAME"):
                 self.gameLoop()
@@ -34,7 +41,13 @@ class Controller:
                 self.gameOver()
 
     def gameLoop(self):
-        # pygame.key.set_repeat(1,50)
+        '''
+        Moves the snake based on the users input and updates and redraws the screen accordingly
+        Args:
+          self
+        Return:
+          None
+        '''
         while self.state == "GAME":
             pygame.time.wait(100)
             for event in pygame.event.get():
@@ -66,6 +79,13 @@ class Controller:
             	
 
     def gameOver(self):
+        '''
+        Ends the game and displays the game over screen
+        Args:
+          self
+        Return:
+          None
+        '''
         myfont = pygame.font.SysFont(None, 30)
         message = myfont.render('Game Over', False, (255,0,0))
         self.screen.blit(message, (self.width/2,self.height/2))

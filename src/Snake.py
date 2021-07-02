@@ -13,8 +13,6 @@ class Segment(pygame.sprite.Sprite):
 
 class Snake:
     def __init__(self, name, x, y, img_file):
-
-        # set other attributes
         self.name = name
         self.head = Segment(10, 10, 'assets/new_snake.png')
         self.body = pygame.sprite.Group()
@@ -25,6 +23,13 @@ class Snake:
             starting += 1
 
     def move_up(self):
+        '''
+        Moves the snake upwards
+        Args:
+          self
+        Return:
+          None
+        '''
         x = self.head.rect.x
         y = self.head.rect.y
         for bsegment in self.body:
@@ -38,6 +43,13 @@ class Snake:
         self.direction = "move_up"
 
     def move_down(self):
+        '''
+        Moves the snake downwards
+        Args:
+          self
+        Return:
+          None
+        '''
         x = self.head.rect.x
         y = self.head.rect.y
         for bsegment in self.body:
@@ -51,6 +63,13 @@ class Snake:
         self.direction = "move_down"
 
     def move_left(self):
+        '''
+        Moves the snake to the left
+        Args:
+          self
+        Return:
+          None
+        '''
         x = self.head.rect.x
         y = self.head.rect.y
         for bsegment in self.body:
@@ -64,6 +83,13 @@ class Snake:
         self.direction = "move_left"
 
     def move_right(self):
+        '''
+        Moves the snake to the right
+        Args:
+          self
+        Return:
+          None
+        '''
         x = self.head.rect.x
         y = self.head.rect.y
         for bsegment in self.body:
@@ -78,11 +104,24 @@ class Snake:
 
 
     def collision(self):  
+        '''
+        Returns true or false bassed on if the snake collides with itself
+        Args:
+          self
+        Return:
+          True if the snake head collides with its body
+        '''
         return pygame.sprite.spritecollide(self.head, self.body, False)
 
 
     def snake_grow(self):
-        # TODO which side to add the tail on
+        '''
+        Adds a segment to the snake based on its direction
+        Args:
+          self
+        Return:
+          None
+        '''
         body_list = self.body.sprites()
         x = body_list[-1].rect.x
         y = body_list[-1].rect.y
@@ -100,6 +139,13 @@ class Snake:
         
 
     def update(self):
+        '''
+        Updates the snake to move constanly based on its current direction
+        Args:
+          self
+        Return:
+          None
+        '''
         if self.direction == "move_up":
             self.move_up()
         elif self.direction == "move_down":
