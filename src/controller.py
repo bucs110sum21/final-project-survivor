@@ -19,7 +19,7 @@ class Controller:
         for i in range(num_fruits):
             x = random.randrange(1,500)
             y = random.randrange(1,500)
-            self.fruits.add(fruit.Fruit("Apple", x, y, 'assets/apple.png' ))
+            self.fruits.add(fruit.Fruit("Apple", x, y, 'assets/new_apple.png'))
 
         self.snake = Snake.Snake("Snake", 250, 250, "assets/snake.png")
         self.state = "GAME"
@@ -56,6 +56,7 @@ class Controller:
             collisions = pygame.sprite.spritecollide(self.snake.head,self.fruits, True)
             if (collisions):
                 self.snake.snake_grow()
+                self.fruits.add(fruit.Fruit("Apple", random.randrange(1,self.width), random.randrange(1,self.height), 'assets/new_apple.png'))
                     
             self.screen.blit(self.background, self.background.get_rect())
             self.screen.blit(self.snake.head.image, self.snake.head.rect)
