@@ -15,7 +15,7 @@
 ***
 
 ## Project Description *(Software Lead)*
-<< Give an overview of your project >>
+<< Our game displays a block that moves around the screen and grow a segment of block after colliding with the apple. However, if the block collides against the wall or touches itself, then the game is over.>>
 
 ***    
 
@@ -40,7 +40,7 @@
         * a short description of the module
 * Class Interface Design
  
-    	*![program design](assets/program_design_drawing.png)
+    	*![program design](assets/Program_design_drawings.png)
 * Classes
     * << You should have a list of each of your classes with a description. >>
 
