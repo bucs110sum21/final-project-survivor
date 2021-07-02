@@ -7,7 +7,7 @@
 
 [https://github.com/bucs110sum21/final-project-survivor](#)
 
-[https://docs.google.com/presentation/d/1KDQIBTwZeMNkbeUd8UvRBJSprkywRxarJ_mL6eytX-c/edit?usp=sharing](#)
+[Demo Slides](https://docs.google.com/presentation/d/1KDQIBTwZeMNkbeUd8UvRBJSprkywRxarJ_mL6eytX-c/edit?usp=sharing)
 
 ### Team: Survivor
 #### Matt Murphy, Jiawei Liu
