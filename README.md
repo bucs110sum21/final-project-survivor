@@ -45,7 +45,7 @@ Our game displays a block that moves around the screen and grows a segment of bl
         * Random is a module that adds pseudo-random number generators for various distributions.
         
 * Class Interface Design
-* ![program design](assets/Program_design_drawings.png)
+* ![program design](assets/program_design_drawing.jpg)
   * this is the basic design of our video game classes
 
 * Classes
