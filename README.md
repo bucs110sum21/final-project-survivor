@@ -39,7 +39,8 @@
         * url for the module documentation
         * a short description of the module
 * Class Interface Design
-  * ![program design](assets/Program_design_drawings.png)
+* ![program design](assets/Program_design_drawings.png)
+  * this is the basic design of our video game classes
 
 * Classes
     * << You should have a list of each of your classes with a description. >>
