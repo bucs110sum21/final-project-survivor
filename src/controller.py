@@ -11,6 +11,7 @@ class Controller:
         self.height = height
         self.screen = pygame.display.set_mode((self.width, self.height))
         self.background = pygame.Surface(self.screen.get_size()).convert()
+        self.background.fill((250, 250, 250))
         pygame.font.init()
 
         self.fruits = pygame.sprite.Group()
@@ -35,7 +36,7 @@ class Controller:
     def gameLoop(self):
         # pygame.key.set_repeat(1,50)
         while self.state == "GAME":
-            self.background.fill((250, 250, 250))
+            pygame.time.wait(100)
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     sys.exit()
@@ -48,17 +49,24 @@ class Controller:
                         self.snake.move_left()
                     elif(event.key == pygame.K_RIGHT):
                         self.snake.move_right()
-
-            if self.snake.collision():
+            isinscreen = self.screen.get_rect().colliderect(self.snake.head.rect)
+            if not isinscreen or self.snake.collision():
                 self.state = "GAMEOVER"
+            self.snake.update()
+            collisions = pygame.sprite.spritecollide(self.snake.head,self.fruits, True)
+            if (collisions):
+                self.snake.snake_grow()
+                    
+            self.screen.blit(self.background, self.background.get_rect())
             self.screen.blit(self.snake.head.image, self.snake.head.rect)
+            self.fruits.draw(self.screen)
             self.snake.body.draw(self.screen)
             pygame.display.flip()
             	
 
     def gameOver(self):
         myfont = pygame.font.SysFont(None, 30)
-        message = myfont.render('Game Over', False, (0,0,0))
+        message = myfont.render('Game Over', False, (255,0,0))
         self.screen.blit(message, (self.width/2,self.height/2))
         pygame.display.flip()
         while True:
