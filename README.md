@@ -40,8 +40,8 @@
         * a short description of the module
 * Class Interface Design
  	* << A simple drawing that shows the class relationships in your code (see below for an example). >>
-        * ![class diagram](assets/class_diagram.jpg)
-    	*![program design](assets/Program_design_drawings.png)
+    
+    	* ![program design](assets/Program_design_drawings.png)
 * Classes
     * << You should have a list of each of your classes with a description. >>
 
