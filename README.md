@@ -1,4 +1,4 @@
-:warning: Everything between << >> needs to be replaced (remove << >> after replacing)
+
 # CS110 Project Proposal
 # Snake Game
 ## CS 110 Final Project
@@ -20,18 +20,18 @@ Our game displays a block that moves around the screen and grows a segment of bl
 ***    
 
 ## User Interface Design *(Front End Specialist: Matt)*
-* User interface concepts
+### User interface concepts
 * ![start screen](assets/start_screen_drawing.png)
   * This is the start screen for our snake game, it contains the background of the game and a start button in the middle of the screen which when pressed will start the game.
 * ![game screen](assets/game_screen_drawing.png)
   * This is the screen the player will see when the game first starts, as the game progresses the user will eat more fruit and then their snake will grow.
 * ![game over screen](assets/game_over_screen_drawing.png)
   * This is the screen the user will see when they lose or complete the game, the score will update to show their final score.  
-* User interface final GUI
-* ![game screen]()
-  * description
-* ![game over screen]
-  * description
+### User interface final GUI
+* ![game screen](assets/GUI_gameinprogress.png)
+  * This is an image of our game in progress, as you can see the snake is the blue rectangle and there are two apples for the snake to try to eat.
+* ![game over screen](assets/GUI_gameover.png)
+  * This is an image of the game over screen, in this instance the game ended because the snake collided with the wall.
 
 ***        
 
