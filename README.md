@@ -39,7 +39,9 @@
         * url for the module documentation
         * a short description of the module
 * Class Interface Design
-* ![program design](assets/Program_design_drawings.png)
+    * << A simple drawing that shows the class relationships in your code (see below for an example). >>
+        * ![class diagram](assets/class_diagram.jpg)
+* ![program design](assets/program_design_drawings.png)
   * this is the basic design of our video game classes
 
 * Classes
