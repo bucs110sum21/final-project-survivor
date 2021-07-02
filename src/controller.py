@@ -49,16 +49,14 @@ class Controller:
                     elif(event.key == pygame.K_RIGHT):
                         self.snake.move_right()
 
-	collisions = pygame.sprite.spritecollide(self.snake, self.snake, True)#replace self.snake with self.fruit
-        	if(collisions):
-		hearts = self.hearts.sprites()
-           	 hearts[-1].kill()
-           	 self.background.fill((250, 0, 0))
-		if(self.snake.health == 0):
-            	self.state = "GAMEOVER"
+            if self.snake.collision():
+                self.state = "GAMEOVER"
+            self.screen.blit(self.snake.head.image, self.snake.head.rect)
+            self.snake.body.draw(self.screen)
+            pygame.display.flip()
+            	
 
     def gameOver(self):
-        self.snake.kill()
         myfont = pygame.font.SysFont(None, 30)
         message = myfont.render('Game Over', False, (0,0,0))
         self.screen.blit(message, (self.width/2,self.height/2))

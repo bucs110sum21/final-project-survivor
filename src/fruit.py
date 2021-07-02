@@ -1,7 +1,6 @@
 import pygame
 import random
 
-
 class Fruit(pygame.sprite.Sprite):
     def __init__(self, name, x, y, img_file):
         pygame.sprite.Sprite.__init__(self)
