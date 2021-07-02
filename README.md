@@ -107,4 +107,3 @@ The back end specialist wrote the data classes and class diagram and wrote most 
 |  6  | Snake collides with fruit | Snake grows +1 segment, and new fruit appears | Snake grows +1 segment and new fruit appears |
 |  7  | Snake collides with wall | Game over screen appears and game ends | Game over screen appears and game ends |
 |  8  | Snake head collides with part of the snake body | Game over screen appears and game ends | Game over screen appears and game ends |
-etc...
