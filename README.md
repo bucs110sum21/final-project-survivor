@@ -49,7 +49,14 @@ Our game displays a block that moves around the screen and grows a segment of bl
   * this is the basic design of our video game classes
 
 * Classes
-    * << You should have a list of each of your classes with a description. >>
+    * Fruit 
+      * This class initializes the location and image of the fruit sprite, and has an update function which adds a new fruit to the screen.
+    * Segment 
+      * This class creates a new sprite segment whcih can be added on to the snake head.
+    * Snake
+      * This class initializes the location adn image for the snake sprite and has functions which can move the snake up, down, left, or right, and has a function which tests to see if the snake collides with itself, a function which adds a segment to the snake based on the direction its tail is facing, and a function whihc updates the snakes location to keep it constantly moving.
+    * Controller 
+      * This class utilizes the other classes to make the gaame run, it initializes the locations of the snakehead sprite and 3 initial segments for the body, it initializes the random locations of two fruit sprites, and has the main loop, game loop, and game over function for our game.  The main loop sets the game to run the game loop until the state is set to game over, which  it then runs the game over function.  The game loop moves the snake based on the users input, checks for collisions, and constanly updates the screen images and snake movements to keep the game running.  The game over function runs when the snake collides with the wall or itself, and the function ends the game and displays game over.  
 
 ## Project Structure *(Software Lead: Matt/Jiawei)*
 
