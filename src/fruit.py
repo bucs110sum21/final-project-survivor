@@ -12,6 +12,13 @@ class Fruit(pygame.sprite.Sprite):
         self.bounce = 1
 
     def update():
+        '''
+        Adds a fruit to the screen when called
+        Args:
+          None
+        Return:
+          None
+        '''
         self.bounce = (self.bounce + 1) % 3
         if self.bounce:
             self.rect.x += 1
